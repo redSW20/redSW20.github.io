@@ -34,6 +34,7 @@ a:hover {
   position: fixed;
   text-align: center;
   z-index: 99;
+  margin-bottom: 0em;
 }
 .nav {
   display: flex;
@@ -108,5 +109,15 @@ h1, h2, h3, h4 {
 
 #contact-us{
   border: solid 2px red;
-  margin: 10px;
+  margin: 0px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.spacer{
+  padding: 0em;
+  margin: .5em;
+  
 }

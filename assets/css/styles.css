@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Lato', serif;
   color: #222;
-  background: url('BG.jpg') center fixed ;
+  background: url('../images/BG.jpg') center fixed ;
 }
 
 #index{
@@ -58,7 +58,7 @@ a:hover {
 
 #maria {
   text-align: center;
-  background: url('Maria.jpg') no-repeat top center ;
+  background: url('../images/Maria.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -103,6 +103,7 @@ header .profile-image:hover {
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
+  float: right;
 }
 .card2 {
   margin: 30px;
@@ -112,9 +113,20 @@ header .profile-image:hover {
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
+  float: right;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #f70b16;
+}
+.card2:hover {
+  border-color: #f70b16;
+}
+
+.float-me-left{
+  float: left;
+  margin: .2px;
+  border: black 2px solid;
+
 }
 
 ul.skills {
