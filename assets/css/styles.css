@@ -181,10 +181,10 @@ a.social {
 }
 
 a.linkedin {
-  background-image: url(linkedin.svg);
+  background-image: url(../images/linkedin.svg);
 }
 a.github {
-  background-image: url(github.svg);
+  background-image: url(../images/github.svg);
 }
 a.social:hover {
   opacity: 1;
@@ -244,4 +244,89 @@ h1, h2, h3 {
     border: solid black 3px;
     border-radius: 10px;
     margin-top: 50px;
+}
+
+#show-form-btn{
+  margin-top: 80px;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 6px #70A016;
+}
+
+#show-form-btn:hover {
+  top:1px;
+  box-shadow: 0 5px #70A016;
+position: relative;
+}
+
+#show-form-btn:active {
+  top:6px;
+  outline: none;
+  box-shadow: 0 0px #70A016;
+  border:0;
+position: relative;
+
+}
+
+#submit-button{
+  margin-top: 0px;
+  background-color: blue; 
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transform: 360deg;
+  box-shadow: 0 6px #0000CD;
+}
+
+#submit-button:hover {
+  top:1px;
+  box-shadow: 0 5px #0000CD;
+position: relative;
+}
+
+#submit-button:active {
+  top:6px;
+  outline: none;
+  box-shadow: 0 0px #0000CD;
+  border:0;
+position: relative;
+
+}
+
+#see-places{
+  margin-top: 80px;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 6px #70A016;
+}
+
+#see-places:hover {
+  top:1px;
+  box-shadow: 0 5px #70A016;
+position: relative;
+}
+
+#see-places:active {
+  top:6px;
+  outline: none;
+  box-shadow: 0 0px #70A016;
+  border:0;
+position: relative;
+
 }
