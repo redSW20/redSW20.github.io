@@ -92,10 +92,7 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 }
-.location {
-  background-color: #222;
-  color: white;
-}
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -194,15 +191,40 @@ a.social:hover {
   clear: both;
 }
 
+.flex-container {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-flow: wrap
+}
+
+.location1{
+  justify-content: flex-start;
+  color: white;
+}
+
+.location8{
+  justify-content: flex-end;
+  color: white;
+  float: right;
+}
+
+.location .location2 {
+  color: white;
+  float: left;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
-  .flex {
-      display: flex;
-      max-width: 1200px;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
+  .flex .flex-container {
+    display: flex;
+    max-width: 80%;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-flow: row wrap;
+}
 
   header {
     min-height: 450px;

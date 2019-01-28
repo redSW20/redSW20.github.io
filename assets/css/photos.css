@@ -6,5 +6,4 @@
   .location{
     display: flex;
     margin : 10px;
-    flex-flow: row wrap;
   }
