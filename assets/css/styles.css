@@ -9,7 +9,8 @@ body {
   text-align: center;
   font-family: 'Lato', serif;
   color: #222;
-  background: url('../images/BG.jpg') center fixed ;
+  background: url('../images/BG.jpg') center fixed;
+  width: 960px;
 }
 
 #index{
