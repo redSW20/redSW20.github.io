@@ -9,8 +9,13 @@ body {
   text-align: center;
   font-family: 'Lato', serif;
   color: #222;
-  background: #f7f5f0;
+  background: url('../images/BG.jpg') center fixed;
 }
+
+body#index{
+background: #e2e2e2;
+}
+
 /* Link Styles */
 
 a {
@@ -53,6 +58,11 @@ a:hover {
 }
 
 header {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 60px;
+}
+#maria{
   text-align: center;
   background: url('../images/Maria.jpg') no-repeat top center ;
   background-size: cover;
