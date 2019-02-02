@@ -4,17 +4,12 @@
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   text-align: center;
   font-family: 'Lato', serif;
   color: #222;
-  background: url('../images/BG.jpg') center fixed;
-  width: 960px;
-}
-
-#index{
-  background: #e2e2e2;
+  background: #f7f5f0;
 }
 /* Link Styles */
 
@@ -29,7 +24,7 @@ a:hover {
 /* Section Styles */
 
 .main-nav {
-  width: 960px;
+  width: 100%;
   background: black;
   min-height: 30px;
   padding: 10px;
@@ -57,15 +52,9 @@ a:hover {
   color: white
 }
 
-#maria {
-  text-align: center;
-  background: url('../images/Maria.jpg') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
-}
 header {
   text-align: center;
+  background: url('../images/Maria.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -92,7 +81,10 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 }
-
+.location {
+  background-color: #222;
+  color: white;
+}
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -101,7 +93,6 @@ header .profile-image:hover {
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
-  float: right;
 }
 .card2 {
   margin: 30px;
@@ -109,22 +100,9 @@ header .profile-image:hover {
   max-width: 500px;
   text-align: center;
   background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  float: right;
 }
 .card:hover {
-  border-color: #f70b16;
-}
-.card2:hover {
-  border-color: #f70b16;
-}
-
-.float-me-left{
-  float: left;
-  margin: .2px;
-  border: black 2px solid;
-
+  border-color: #ff99ff;
 }
 
 ul.skills {
@@ -177,7 +155,6 @@ a.social {
   opacity: .5;
   transition: all .25s;
 }
-
 a.linkedin {
   background-image: url(../images/linkedin.svg);
 }
@@ -191,40 +168,15 @@ a.social:hover {
   clear: both;
 }
 
-.flex-container {
-  display: flex;
-  max-width: 100%;
-  justify-content: space-around;
-  margin: 0 auto;
-  flex-flow: wrap
-}
-
-.location1{
-  justify-content: flex-start;
-  color: white;
-}
-
-.location8{
-  justify-content: flex-end;
-  color: white;
-  float: right;
-}
-
-.location .location2 {
-  color: white;
-  float: left;
-}
-
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
 
-  .flex .flex-container {
-    display: flex;
-    max-width: 100%;
-    justify-content: space-around;
-    margin: 0 auto;
-    flex-flow: row wrap;
-}
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
 
   header {
     min-height: 450px;
@@ -256,29 +208,41 @@ a.social:hover {
 
 }
 
-/* Styles for smaller screens */
-@media screen and (max-width: 720px) {
-
-  .flex .flex-container {
-    display: flex;
-    max-width: 80%;
-    justify-content: space-around;
-    margin: 0 auto;
-    flex-flow: row wrap;
+h1, h2, h3 {
+    color: maroon;
+    letter-spacing: .5px;
 }
 
+.card-title {
+    color: maroon;
+    text-align: center;
+    border: solid black 3px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+/* Styles for larger screens */
+@media screen and (max-width: 719px) {
+
+  .flex {
+      display: flex;
+      max-width: 600px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
   header {
-    min-height: 250px;
+    min-height: 225px;
   }
 
   .nav {
-    max-width: 700px;
+    max-width: 600px;
   }
 
   .nav .name {
     display: block;
     margin-right: auto;
-    color: black;
+    color: white;
   }
 
   main {
@@ -291,7 +255,7 @@ a.social:hover {
 
   footer {
     font-size: 1.3em;
-    max-width: 700px;
+    max-width: 600px;
     margin: 40px auto;
   }
 
@@ -308,89 +272,4 @@ h1, h2, h3 {
     border: solid black 3px;
     border-radius: 10px;
     margin-top: 50px;
-}
-
-#show-form-btn{
-  margin-top: 80px;
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  box-shadow: 0 6px #70A016;
-}
-
-#show-form-btn:hover {
-  top:1px;
-  box-shadow: 0 5px #70A016;
-position: relative;
-}
-
-#show-form-btn:active {
-  top:6px;
-  outline: none;
-  box-shadow: 0 0px #70A016;
-  border:0;
-position: relative;
-
-}
-
-#submit-button{
-  margin-top: 0px;
-  background-color: blue; 
-  border: none;
-  color: white;
-  padding: 15px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transform: 360deg;
-  box-shadow: 0 6px #0000CD;
-}
-
-#submit-button:hover {
-  top:1px;
-  box-shadow: 0 5px #0000CD;
-position: relative;
-}
-
-#submit-button:active {
-  top:6px;
-  outline: none;
-  box-shadow: 0 0px #0000CD;
-  border:0;
-position: relative;
-
-}
-
-#see-places{
-  margin-top: 80px;
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  box-shadow: 0 6px #70A016;
-}
-
-#see-places:hover {
-  top:1px;
-  box-shadow: 0 5px #70A016;
-position: relative;
-}
-
-#see-places:active {
-  top:6px;
-  outline: none;
-  box-shadow: 0 0px #70A016;
-  border:0;
-position: relative;
-
 }
