@@ -139,6 +139,10 @@ footer {
   padding: 20px 0 40px 20px;
 }
 
+.center_me{
+  text-align: center;
+}
+
 footer .copyright {
   top: -8px;
   margin-right: 20px;
